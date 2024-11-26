@@ -29,12 +29,12 @@ for file in file_name_documents:
     elif ".csv" in file and not os.path.exists(documents_path + "csv files/" + file):
         shutil.move(documents_path + file, documents_path + "csv files/" + file)
 
-#TODO Move files from Pictures folder to documents and from both to code
+# Move files from Pictures folder to documents and from both to code
 for file in file_name_images:
     if ".pdf" in file or ".txt" in file or ".csv" in file:
         shutil.move(image_path + file, documents_path + file)
 
-#TODO Organize files from downloads folder & desktop
+# Organize files from downloads folder & desktop #TODO desktop & code folder?
 
 for file in file_name_downloads:
     if ".pdf" in file or ".txt" in file or ".csv" in file:
